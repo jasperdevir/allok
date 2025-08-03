@@ -11,9 +11,9 @@ OS specific functions.
 - Debian 12 _(x86_64)_
 
 ## Contents
-- [Methodology](#Methodology)
-- [Build](#Build)
-- [Usage](#Usage)
+- [Methodology](#methodology)
+- [Build](#build)
+- [Usage](#usage)
 - [Types & Macros](#types--macros)
 
 ## Methodology
@@ -30,7 +30,7 @@ The diagrams below show the relationships between the different
 data structures:
 
 ### Memory Map
-![]()
+![Memory Map Diagram](https://github.com/user-attachments/assets/ba3afe01-e21e-4dad-b103-4ffa96941283)
 _Memory Maps_ are a linked list of _MemoryPools_ that contain a
 linked list of _MemoryBlocks_, these _MemoryBlocks_ contain
 the actual space of allocate memory and metadata.
@@ -41,7 +41,7 @@ attempting to minimise fragmentation. They are useful for dynamic
 memory usage, but come with increased allocation time and memory use.
 
 ### Memory Arena
-![]()
+![Memory Arena Diagram](https://github.com/user-attachments/assets/469bd609-91d8-49b0-bb38-057fc958c1e7)
 _MemoryArenas_ are linear memory buffers. When 
 new memory is needed it can either be placed at the end of the
 arenas current memory or a new arena can be allocated and linked 
